@@ -41,3 +41,18 @@ Para comprobar la página personalizada de error, visita `http://127.0.0.1:8000/
 - `core/`: aplicacion Django con la vista de bienvenida, las URLs propias y las plantillas HTML.
 - `requirements.txt`: dependencias del proyecto.
 - `.gitignore`: archivos locales que no deben subirse al repositorio.
+
+## Cómo ejecutar el proyecto
+
+1. Crear y activar un entorno virtual, y luego instalar las dependencias:
+   pip install -r requirements.txt
+2. En MySQL, crear una base de datos vacía llamada plataforma_encuestas_db
+   y un usuario con permisos sobre ella.
+3. Copiar .env.example como .env y completar sus valores:
+   Copy-Item .env.example .env
+4. Aplicar las migraciones:
+   python manage.py migrate
+5. Crear un superusuario:
+   python manage.py createsuperuser
+6. Levantar el servidor y entrar a http://127.0.0.1:8000/admin/:
+   python manage.py runserver

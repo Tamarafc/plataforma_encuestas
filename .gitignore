@@ -11,3 +11,10 @@ db.sqlite3
 db.sqlite3-journal
 
 .vscode/
+
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+db.sqlite3
