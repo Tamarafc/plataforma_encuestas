@@ -86,6 +86,6 @@ class RespuestaViewSet(viewsets.ModelViewSet):
     serializer_class = RespuestaSerializer
 
 
-class HistorialEstadoViewSet(viewsets.ReadOnlyModelViewSet):
+class HistorialEstadoViewSet(viewsets.ModelViewSet):
     queryset = HistorialEstado.objects.all().order_by('-fecha')
     serializer_class = HistorialEstadoSerializer
