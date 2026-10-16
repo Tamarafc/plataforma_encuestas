@@ -46,8 +46,7 @@ Para comprobar la página personalizada de error, visita `http://127.0.0.1:8000/
 
 1. Crear y activar un entorno virtual, y luego instalar las dependencias:
    pip install -r requirements.txt
-2. En MySQL, crear una base de datos vacía llamada plataforma_encuestas_db
-   y un usuario con permisos sobre ella.
+2. Ejecutar el script `scripts_sql/crear_base_datos.sql` en MySQL (por ejemplo, en la       pestaña SQL de phpMyAdmin). Crea la base de datos, el usuario y sus permisos. 
 3. Copiar .env.example como .env y completar sus valores:
    Copy-Item .env.example .env
 4. Aplicar las migraciones:
